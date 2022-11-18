@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                bat "${env.PYTHON_PATH}\\python.exe rok_przystepny.py"
+                bat "${env.PYTHON_PATH}\\python.exe main.py"
             }
         }
     }
